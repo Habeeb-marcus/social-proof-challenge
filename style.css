@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
-body {
-    margin: 30px 150px;
-    font-family: 'PT sans', sans-serif
+*{
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    font-family: 'PT sans', sans-serif;
+    padding: 5px
+}
 
+.landing-section {
+    margin: 86px;
+}
 h1 {
     color: hsl(300, 43%, 22%);
     margin-top: 0;
@@ -18,27 +25,34 @@ p {
 .header {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 
 .text {
-    width: 328px;
-    font-size: 24px;
+    width: 44%;
+    font-size: 33px;
+}
+.text p {
+    font-size: 30px;
 }
 
+.rating {
+    margin-left: 37px;
+    justify-content: center;
+}
 
 .box-rating {
     background: #e9dde9;
    margin: 18px 0 15px ;
-   padding: 0 13px;
+   padding: 0 30px;
    border-radius: 15px;
    color: #421841;
    justify-content: space-between;
-   font-size: 20px;
-   width: 360px;
+   font-size: 18px;
+   width: 413px;
    display: flex;
-   height: 35px;
+   height: 85px;
    align-items: center;
 
 }
@@ -46,11 +60,13 @@ p {
 span {
     display: inline-block;
     justify-content: space-between;   
-  }
+    margin-left: 11px;
+}
+  
 
   #rate {
     display: inline-block;
-      margin-right: 50px;
+      margin-right: 12px;
       color: indigo
       
   }
@@ -74,12 +90,15 @@ span {
 
 .content {
     display: flex;
+    justify-content: space-between;
 }
+
 .card {
-    width: 300px;
+    width: 400px;
     height: 280px;
     background-color: #502050;
-    margin: 16px 0 16px 20px;
+    margin: 16px 0 16px 0;
+
     padding: 15px;
     border-radius: 15px;
     font-size: 19px;
@@ -93,20 +112,18 @@ span {
 
 
 .footer {
-    margin: 5px 355px;
+    display: flex;
+   justify-content: center;
 }
-/* .card :first-child {
-    margin-left: 0;
-} */
 
 
 
 #card2 {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 #card3 {
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 .card .cloton {
@@ -123,15 +140,48 @@ span {
  }
 
  .status {
-    transform: translate(99px, -106px);
+    transform: translate(99px, -116px);
     color: #ee68a5;
  }
-/* .landing-section {
-    border: 5px solid black;
-    width: 90vw;
-    height: 80vh;
-} */
-@media screen ( max-width: 679px;) {
 
-    
-}
+@media (max-width: 800px) {
+
+    .header {
+       flex-direction: column;
+       justify-content: flex-start;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 55px;
+    }
+
+    .landing-section {
+        margin: 40px;
+        justify-content: flex-start;
+    }
+     
+     .box-rating {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .rating, #box2, #box1, #box3{
+        margin-left: 0;
+    }
+
+    .rating {
+        height: 354px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width:  100%;
+    }
+
+ .text {
+        width: 100%; 
+    }
+    }
+  
